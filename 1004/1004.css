@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  margin: 30px 100px 30px 100px;
+}
+
+.h_menu {
+  display: flex;
+}
+
+.h_menu img {
+  width: 20%;
+}
+
+.h_menu ul {
+  display: flex;
+}
+
+.h_menu li {
+  list-style: none;
+  margin: 0 40px 0 40px;
+  text-align: center;
+}
+
+.h_menu a {
+  text-decoration: none;
+  color: black;
+}
+
+main img {
+  width: 100%;
+}
+
+.about_text {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.about_text img {
+  height: 200px;
+  width: 200px;
+  margin-top: 40px;
+  border-radius: 100%;
+}
+
+.about_text1 {
+  margin: 80px 40px ;
+}
+
+#Bicycle {
+  display: block;
+  text-align: center;
+}
+
+#Bicycle ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+#Bicycle li {
+  width: 300px;
+  list-style-type: none;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title::after {
+  content:"";
+  display:block;
+  width:90px;
+  height:2px;
+  background-color:#074249;
+  margin: auto;
+}

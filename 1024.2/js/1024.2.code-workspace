@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/slick-1.8.1/slick"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "1024.2"
+	}
+}

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Greeting,
+.Service {
+    max-width: 870px;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.Greeting h2,
+.Service h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.Greeting h2,
+.Greeting p,
+.Service_texts,
+.Service_img {
+    width: 50%;
+}
+
+.Greeting h2 span,
+.Service h2 span {
+    display: block;
+    font-size: 11px;
+}
+
+.Service_texts p {
+    margin-bottom: 15px;
+}
+
+.Service_button {
+    text-align: end;
+
+    margin-right: 30px;
+}
+
+.Service_button a {
+    text-align: end;
+
+    color: black;
+    font-weight: bold;
+
+    margin-right: 30px;
+}
+
+.Service_img img {
+    width: 100%;
+}

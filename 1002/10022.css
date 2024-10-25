@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.SERVICE {
+  max-width: 870PX;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SERVICE_text,
+.SERVICE_img {
+  width: 50%;
+}
+
+.SERVICE h2 span {
+  display: block; 
+}
+
+.SERVICE_button {
+  text-align: end;
+} 
+
+.SERVICE_button a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.GREETING {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.GREETING h2,
+.GREETING p {
+  width: 50%; 
+}
+
+.GREETING h2 span {
+  display: block;
+} 

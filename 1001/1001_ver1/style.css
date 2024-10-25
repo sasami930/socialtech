@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Greeting {
+    max-width: 700px;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.Greeting h2,
+.Greeting p {
+    width: 50%;
+}
+
+.Greeting h2 span {
+    display: block;
+    font-size: 12px;
+}

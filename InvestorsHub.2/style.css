@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+header {
+  height: 600px;
+}
+
+header a img {
+  transition: filter 0.1s ease;
+}
+
+header a img:hover {
+  filter: opacity(80%);
+  transition: all 0.3s;
+}
+
+/* main */
+.sec {
+  margin: 30px 0;
+}
+
+.sec h2 span {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.sec p {
+  margin: 25px 0;
+}
+
+.sb_a {
+  text-align: right;
+  margin: 0 20px 30px 0;
+  font-weight: bold;
+}
+
+.m_m,
+.mm_a {
+  text-align: center;
+  margin: 20px;
+} 
+
+.m_m1,
+.mm_a {
+  font-weight: bold;
+  margin: 40px 0 30px 10px;
+}
+
+.m_m1::after {
+  content:"";
+  display:block;
+  width:90px;
+  height:2px;
+  background-color:#074249;
+  margin: 25px auto;
+}
+
+.company {
+  background-image: url(https://inve-hub.jp/struct/wp-content/uploads/top_company.jpg);
+  position: relative;
+}
+
+.recruit {
+  background-image: url(https://inve-hub.jp/struct/wp-content/uploads/top_recruit.jpg);
+  position: relative;
+}
+
+#core {
+  width: 100%;
+  display: flex;
+  margin: 80px 0;
+}
+
+.core_a {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 30px;
+  position: absolute;
+}
+
+.core_a span {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.company:hover,
+.recruit:hover {
+  filter: opacity(80%);
+  transition: all 0.3s;
+}
+
+#info dl {
+  display: flex;
+}
+
+#info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px;
+}
+
+#info dl {
+  border-bottom: dotted lightgray;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+#info dt {
+  background-color: darkblue;
+  color: #fff;
+  margin: 10px 20px 10px 10px;
+}
+
+#info dd {
+  margin: 5px;
+}
+
+.dd_blue::before {
+  content: "|";
+  color: gray;
+  margin-right: 5px;
+}
+
+#info dt {
+  padding: 3px 4px;
+  border-radius: 3px;
+}
+
+.dd_blue a {
+  transition: all 0.3s;
+}
+
+.dd_blue a:hover {
+  color: #006699;
+}
+
+#info2 {
+  background-color: lightgray;
+  text-align: center;
+  margin: 50px 0 0 0;
+  height: 150px;
+}
+
+#info2 h3,
+#info2 ul {
+  padding: 10px;
+}
+
+#info2 li {
+  background-color: #fff;
+  transition: all 0.3s;
+  padding: 10px 20px;
+  margin: 30px 30px 40px 30px;
+}
+
+#info2 a:hover {
+  background-color: darkblue;
+  color: #fff;
+}
+
+#info2 ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#link {
+  width: 60%;
+  margin: 5px auto;
+}
+
+#link ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#link a {
+  color: lightgray;
+  transition: all 0.3s;
+  font-size: 0.7rem;
+}
+
+#link a span {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+#link a span:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: darkblue;
+  text-align: center;
+  color: #fff;
+  font-size: 0.8rem;
+  height: 15px;
+}
+
+
+/* pc */
+
+@media screen and (min-width:701px) {
+  
+
+
+header {
+  background-image: url('https://inve-hub.jp/struct/wp-content/uploads/pc2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+  display: flex;
+  margin-right: 20px;
+}
+header ul li {
+  margin: 30px;
+}
+
+header ul li:first-child {
+  text-decoration: underline;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.h_menu1:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.h_menu2 {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  height: 25px;
+  width: 80px;
+  transition: all 0.3s;
+}
+
+.h_menu2:hover {
+  background-color: darkblue;
+  color: #fff;
+  border: 1px solid darkblue;
+}
+
+/* main */
+
+.sec {
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex;
+}
+
+#greeting h2,
+#greeting p,
+#service img {
+  width: 50%;
+}
+
+.ser_txt {
+  margin-right: 20px;
+}
+
+.m_m {
+  display: flex;
+  justify-content: space-around;
+}
+
+.company,
+.recruit {
+  width: 50%;
+  height: 300px;
+}
+
+#info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+}
+
+
+
+/* sp */
+
+@media screen and (max-width:700px){
+  
+  header {
+    background-image: url('https://inve-hub.jp/struct/wp-content/uploads/pc2.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header a {
+    margin: 20px;
+    font-weight: bold;
+  }
+
+  header li {
+    margin: 5px;
+  }
+
+  .sec {
+    margin: 80px 20px;
+  }
+
+  #service img {
+    max-width: 100%;
+  }
+
+  #core {
+    display: block;
+  }
+
+  .company,.recruit {
+    height: 250px;
+  }
+
+  #info2 ul {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #link {
+    width: 100%;
+    height: 70px;
+    padding: 30px;
+  }
+
+}

@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+
+#header {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: pink; */
+  margin-bottom: 30px;
+  padding: 10px;
+  background-image: url('https://inve-hub.jp/struct/wp-content/uploads/pc2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+#header ul {
+  display: flex;
+  align-items: center;
+}
+
+#header a{
+  color: #fff;
+}
+
+
+#header a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#header li {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+#header ul li:first-child {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#header ul li:last-child {
+  margin-right: 20px;
+}
+
+#header p {
+  position: absolute;
+  top: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* main */
+
+#greeting,
+#service {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1020px;
+}
+
+#greeting h2,
+#service h2 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+#service img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#greeting p,
+.service_img {
+  width: 50%;
+}
+
+#greeting h2 span,
+#service h2 span {
+  display: block;
+  font-size: 18px;
+}
+
+#service {
+  position: relative;
+}
+
+.service_txt a {
+  position: absolute;
+  top: 290px;
+  left: 290px;
+  color: black;
+  font-weight: bold;
+}
+
+.mainli {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main_list {
+  margin: 10px;
+}
+
+#main_list ul {
+  margin: 20px 10px 20px 10px;
+}
+
+#main_list a {
+  color: black;
+  font-weight: bold;
+}
+
+#main_list ul{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#main_list {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#main_li2 ul {
+  display: flex;
+}
+
+#main_li2 ul li img {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.li1::after {
+  content:"";
+  display:block;
+  width:110px;
+  height:2px;
+  background-color:#074249;
+  margin: auto
+}
+
+#main_li2 ul li img:hover {
+  filter: brightness(1.10); 
+}
+
+#info dl {
+  display: flex;
+  border-bottom: dotted gray;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+#info dt {
+  margin-right: 10px;
+  background-color: darkblue;
+  color: #fff;
+}
+
+#info dd {
+  margin-right: 10px;
+}
+
+#info h1 {
+  margin: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#info a {
+  color:gray;
+}
+
+#form {
+  height: 100px;
+  padding: 30px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.form1 ul  {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.form1 li {
+  width: 40%;
+}
+
+.form1 a {
+  color: black;
+  padding: 10px 30px;
+  background-color: azure;
+  transition: all 0.3s;
+}
+
+.form1 a:hover {
+  background-color: darkblue;
+  color: #fff;
+}
+
+#link ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+#link ul a {
+  color: gray;
+  font-size: 80%;
+}
+
+#link ul a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  font-size: 60%;
+}
+
+
+/* //sp// */
+
+@media screen and (max-width:600px){
+
+  #header {
+    width: 100%;
+    height: 270px;
+  }
+
+  #header img {
+    width: 220px;
+  }
+
+  #header nav {
+    display: none;
+  }
+
+  #header p {
+    font-size: 100%;
+  }
+
+  #greeting,
+  #service {
+    display: block;
+  }
+
+  
+
+  #greeting h2,
+  #service h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .service_txt p,
+  #greeting p {
+    font-size: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #service {
+    position: relative;
+  }
+
+  #service a {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    font-size: 70%;
+  }
+
+  .service_img {
+    width: 100%;
+  }
+
+  .service_txt {
+    margin-bottom: 80px;
+  }
+
+  .mainli {
+    flex-direction: column;
+  }
+
+  #form {
+    height: 200px;
+  }
+
+  .form1 ul {
+    flex-direction: column;
+  }
+
+  #form h2 {
+    font-size: 20px;
+    margin: 10px 3px 3px 15px;
+  }
+
+  .form1 li {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #main_li2 ul {
+    display: block;
+  }
+
+  #main_li2 img {
+    vertical-align: bottom;
+  }
+
+
+}
